@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Multi Docs',
+  tagline: 'Lots of docs in one place',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -31,6 +31,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  
 
   presets: [
     [
@@ -64,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Multi Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -81,6 +83,12 @@ const config = {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
         ],
       },
