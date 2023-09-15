@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Demo Docs
+# Integeration1 Docs
 
 Here's an example document.

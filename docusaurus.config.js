@@ -45,20 +45,20 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'demo',
-        path: 'demo',
-        routeBasePath: 'demo',
-        sidebarPath: require.resolve('./sidebarsDemo.js'),
+        id: 'Integration1',
+        path: 'Integration1',
+        routeBasePath: 'Integration1',
+        sidebarPath: require.resolve('./sidebarsIntegration1.js'),
         // ... other options
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'demo2',
-        path: 'demo2',
-        routeBasePath: 'demo2',
-        sidebarPath: require.resolve('./sidebarsDemo2.js'),
+        id: 'Integration2',
+        path: 'Integration2',
+        routeBasePath: 'Integration2',
+        sidebarPath: require.resolve('./sidebarsIntegration2.js'),
         // ... other options
       },
     ],
@@ -86,14 +86,14 @@ const config = {
             position: 'left',
             items: [
               {
-                to: '/demo/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
-                label: 'Demo',
-                activeBaseRegex: `/demo/`,
+                to: '/Integration1/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
+                label: 'Integration1',
+                activeBaseRegex: `/Integration1/`,
               },
               {
-                to: '/demo2/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
-                label: 'Demo2',
-                activeBaseRegex: `/demo2/`,
+                to: '/Integration2/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
+                label: 'Integration2',
+                activeBaseRegex: `/Integration2/`,
               },
             ],
           },
@@ -113,14 +113,14 @@ const config = {
             position: 'left',
             dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
             dropdownActiveClassDisabled: true,
-            docsPluginId: 'demo',
+            docsPluginId: 'Integration1',
           },
           {
             type: 'docsVersionDropdown',
             position: 'left',
             dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
             dropdownActiveClassDisabled: true,
-            docsPluginId: 'demo2',
+            docsPluginId: 'Integration2',
           }
         ],
       },
