@@ -41,6 +41,29 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      // Note seems not to return docs results from integration1 but does from Integration2
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        docsRouteBasePath: [
+          "docs",
+          "Integration1",
+          "Integration2"
+        ],
+        highlightSearchTermsOnTargetPage: true,
+        docsDir: [
+          "docs",
+          "Integration1",
+          "Integration2"
+        ],
+        explicitSearchResultPath: true,
+        useAllContextsWithNoSearchContext: true
+      }),
+    ],
+  ],
+
   plugins: [
     [
       '@docusaurus/plugin-content-docs',
